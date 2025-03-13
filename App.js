@@ -34,12 +34,12 @@ function StackNavigator({ navigation }) {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Home" component={Home} options={{ header: () => <CustomHeader navigation={navigation} title="Home" /> }} />
-      <Stack.Screen name="Grace Hopper" component={GraceHopper} options={{ header: () => <CustomHeader navigation={navigation} title="Mulher 1" /> }} />
-      <Stack.Screen name="Ada Lovelace" component={AdaLovelace} options={{ header: () => <CustomHeader navigation={navigation} title="Mulher 2" /> }} />
-      <Stack.Screen name="Margaret Hamilton" component={MargaretHamilton} options={{ header: () => <CustomHeader navigation={navigation} title="Mulher 3" /> }} />
-      <Stack.Screen name="Katherine Johnson" component={KatherineJohnson} options={{ header: () => <CustomHeader navigation={navigation} title="Mulher 4" /> }} />
-      <Stack.Screen name="Radia Perlman" component={RadiaPerlman} options={{ header: () => <CustomHeader navigation={navigation} title="Mulher 5" /> }} />
-      <Stack.Screen name="Sonia Guimarães" component={SoniaGuimarães} options={{ header: () => <CustomHeader navigation={navigation} title="Mulher 6" /> }} />
+      <Stack.Screen name="Grace Hopper" component={GraceHopper} options={{ header: () => <CustomHeader navigation={navigation} /> }} />
+      <Stack.Screen name="Ada Lovelace" component={AdaLovelace} options={{ header: () => <CustomHeader navigation={navigation} /> }} />
+      <Stack.Screen name="Margaret Hamilton" component={MargaretHamilton} options={{ header: () => <CustomHeader navigation={navigation} /> }} />
+      <Stack.Screen name="Katherine Johnson" component={KatherineJohnson} options={{ header: () => <CustomHeader navigation={navigation} /> }} />
+      <Stack.Screen name="Radia Perlman" component={RadiaPerlman} options={{ header: () => <CustomHeader navigation={navigation} /> }} />
+      <Stack.Screen name="Sonia Guimarães" component={SoniaGuimarães} options={{ header: () => <CustomHeader navigation={navigation} /> }} />
     </Stack.Navigator>
   );
 }
