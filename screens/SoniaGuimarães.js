@@ -4,23 +4,52 @@ import { Text, Image, StyleSheet, ScrollView, View } from 'react-native';
 export default function SoniaGuimaraes() {
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.name}>Sônia Guimarães</Text>
+      <Text style={styles.name}>Sonia Guimarães</Text>
       <Text style={[styles.description, styles.introducao]}>
-        Sônia Guimarães é uma física brasileira reconhecida por seu trabalho em física experimental e pela luta pela inclusão de mulheres negras na ciência. Ela é a primeira mulher negra a se tornar professora titular no Instituto de Física da Universidade de São Paulo (USP).
+        Sonia Guimarães é uma física brasileira conhecida por suas contribuições no campo da física de materiais e, particularmente, pela defesa de políticas de inclusão e igualdade de gênero no ambiente acadêmico e científico. Ela se destacou pela sua pesquisa na área de física de partículas e por seu trabalho como professora e mentora.
       </Text>
+
       <View style={styles.imageContainer}>
         <Image source={require('../assets/Sonia.jpg')} style={styles.image} />
       </View>
-      <Text style={styles.subtitle}>Principais Contribuições:</Text>
-      <Text style={styles.description}>
-        - Pioneira na física experimental e na luta pela inclusão de mulheres negras na ciência.<br />
-        - Contribuiu para o avanço do estudo da física de partículas.<br />
-        - Trabalhou para aumentar a diversidade nas áreas de ciências e tecnologia no Brasil.
-      </Text>
-      <Text style={styles.subtitle}>Legado:</Text>
-      <Text style={styles.description}>
-        Sônia Guimarães é um exemplo de perseverança e dedicação, inspirando novas gerações de cientistas, especialmente mulheres negras, e ampliando as perspectivas da ciência no Brasil e no mundo.
-      </Text>
+
+      <View style={styles.sectionContainer}>
+        <Text style={styles.subtitle}>Infância e Formação</Text>
+        <Text style={styles.sectionText}>
+          Sonia Guimarães nasceu em 1958, em São Paulo, e desde muito jovem se interessou pela ciência. Ela se formou em Física pela Universidade de São Paulo (USP) e, posteriormente, obteve seu doutorado na Universidade Estadual de Campinas (UNICAMP). Durante sua formação, ela se dedicou à física de partículas, focando em aspectos teóricos e experimentais da área.
+        </Text>
+      </View>
+
+      <View style={styles.sectionContainer}>
+        <Text style={styles.subtitle}>Carreira Acadêmica</Text>
+        <Text style={styles.sectionText}>
+          Sonia Guimarães foi professora na Universidade de São Paulo e atuou em várias instituições de pesquisa. Ela é uma defensora da diversidade e da inclusão dentro do meio acadêmico, principalmente no que diz respeito ao empoderamento de mulheres na ciência.
+        </Text>
+      </View>
+
+      <View style={styles.sectionContainer}>
+        <Text style={styles.subtitle}>Principais Contribuições</Text>
+        <Text style={styles.contribution}>
+          Sonia Guimarães é amplamente reconhecida por seu trabalho na física de partículas, além de suas contribuições para a popularização da ciência no Brasil. Ela também tem sido uma defensora ativa das políticas de inclusão para mulheres no campo da física e em outras ciências exatas.
+        </Text>
+      </View>
+
+      <View style={styles.sectionContainer}>
+        <Text style={styles.subtitle}>Legado</Text>
+        <Text style={styles.legado}>
+          Sonia Guimarães deixou um legado significativo na física brasileira, não só pelo seu trabalho acadêmico, mas também por sua atuação como mentora e defensora de uma ciência mais inclusiva e acessível. Ela tem sido uma inspiração para muitas mulheres que desejam seguir carreiras científicas, desafiando as barreiras de gênero.
+        </Text>
+        <Text style={styles.legado}>
+          Sua presença no meio acadêmico contribuiu para a quebra de estereótipos e para a construção de uma ciência mais diversa e igualitária no Brasil.
+        </Text>
+      </View>
+
+      <View style={styles.sectionContainer}>
+        <Text style={styles.subtitle}>Citação Famosa</Text>
+        <Text style={styles.legado}>
+          "A ciência precisa de mais mulheres e de mais diversidade. Isso é essencial para que as ideias floresçam."
+        </Text>
+      </View>
     </ScrollView>
   );
 }
@@ -32,42 +61,65 @@ const styles = StyleSheet.create({
     padding: 25,
   },
   imageContainer: {
-    alignItems: 'end',
-    marginBottom: 20,
+    alignItems: 'center',
+    marginVertical: 20,
   },
   image: {
     width: 280,
     height: 230,
     borderRadius: 15,
     borderWidth: 2,
-    marginTop: -250,
-    borderColor: '#e0af0d', // Bordas para a imagem
+    borderColor: '#e0af0d',
   },
   name: {
     fontSize: 34,
     fontWeight: 'bold',
-    color: '#e0af0d', // Cor vibrante
+    color: '#e0af0d',
     textAlign: 'center',
     marginVertical: 10,
+    textShadowColor: '#000',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 3,
   },
   introducao: {
-    maxWidth: 330,
-    flex: 'start',
-    marginTop: 25,
+    fontSize: 18,
+    color: '#fff',
+    textAlign: 'justify',
+    marginBottom: 20,
   },
   subtitle: {
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: 'bold',
-    color: '#e0af0d', // Cor vibrante
-    marginVertical: 12,
-    paddingHorizontal: 12,
-    textShadowColor: '000',
+    color: '#e0af0d',
+    marginVertical: 10,
+    textAlign: 'left',
+    textShadowColor: '#000',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 3,
   },
-  description: {
-    fontSize: 20,
+  sectionText: {
+    fontSize: 18,
     color: '#fff',
-    marginBottom: 20,
-    paddingHorizontal: 10,
+    marginLeft: 10,
+    marginBottom: 15,
     textAlign: 'justify',
+  },
+  sectionContainer: {
+    marginVertical: 15,
+  },
+  contribution: {
+    fontSize: 18,
+    color: '#fff',
+    marginLeft: 10,
+    marginBottom: 15,
+    textAlign: 'justify',
+  },
+  legado: {
+    fontSize: 18,
+    color: '#fff',
+    marginLeft: 10,
+    marginBottom: 15,
+    textAlign: 'justify',
+    fontStyle: 'italic',
   },
 });
