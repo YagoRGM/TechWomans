@@ -16,7 +16,7 @@ export default function GraceHopper() {
       <View style={styles.sectionContainer}>
         <Text style={styles.subtitle}>Infância e Formação</Text>
         <Text style={styles.sectionText}>
-          Grace Hopper nasceu em 9 de dezembro de 1906, em Nova York, e desde jovem demonstrou grande interesse por ciências e matemática. Ela se formou em Matemática pela Universidade de Yale em 1928, tornando-se uma das poucas mulheres na época a seguir essa área. 
+          Grace Hopper nasceu em 9 de dezembro de 1906, em Nova York, e desde jovem demonstrou grande interesse por ciências e matemática. Ela se formou em Matemática pela Universidade de Yale em 1928, tornando-se uma das poucas mulheres na época a seguir essa área.
           No início de sua carreira acadêmica, Grace começou na área de matemática, mas seu interesse pela computação surgiu após ela entrar para a Marinha dos EUA.
         </Text>
       </View>
@@ -24,7 +24,7 @@ export default function GraceHopper() {
       <View style={styles.sectionContainer}>
         <Text style={styles.subtitle}>Carreira Militar</Text>
         <Text style={styles.sectionText}>
-          Hopper ingressou na Marinha dos Estados Unidos durante a Segunda Guerra Mundial em 1943. Ela começou sua carreira como tenente e foi designada para o projeto de construção de um dos primeiros computadores eletrônicos, o Mark I, na Universidade de Harvard. 
+          Hopper ingressou na Marinha dos Estados Unidos durante a Segunda Guerra Mundial em 1943. Ela começou sua carreira como tenente e foi designada para o projeto de construção de um dos primeiros computadores eletrônicos, o Mark I, na Universidade de Harvard.
           Ela se destacou por sua habilidade técnica, e também pela sua capacidade de liderança. Sua carreira na Marinha culminou com o posto de contra-almirante, um feito raro para mulheres na época.
         </Text>
       </View>

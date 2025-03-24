@@ -23,7 +23,8 @@ const CustomHeader = ({ navigation, title }) => {
       alignItems: 'center',
       justifyContent: 'space-between',
       padding: 15,
-      backgroundColor: '#4B1D2F'
+      backgroundColor: '#rgb(100, 3, 19)',
+      boxShadow: '0px 0px 25px black'
     }}>
       <TouchableOpacity onPress={() => navigation.openDrawer()} style={{ marginRight: 10 }}>
         <FontAwesome name="bars" size={24} color="white" />
@@ -66,6 +67,7 @@ export default function DrawerNavigator() {
           options={({ navigation }) => ({
             header: () => <CustomHeader navigation={navigation} title="Home" />
           })}
+
         />
         <Drawer.Screen
           name="Grace Hopper"
@@ -85,21 +87,21 @@ export default function DrawerNavigator() {
           name="Margaret Hamilton"
           component={MargaretHamilton}
           options={({ navigation }) => ({
-            header: () => <CustomHeader navigation={navigation} title="Margaret Hamilton" />
+            header: () => <CustomHeader style={styles.CustomHeader} navigation={navigation} title="Margaret Hamilton" />
           })}
         />
         <Drawer.Screen
           name="Katherine Johnson"
           component={KatherineJohnson}
           options={({ navigation }) => ({
-            header: () => <CustomHeader navigation={navigation} title="Katherine Johnson" />
+            header: () => <CustomHeader style={styles.CustomHeader} navigation={navigation} title="Katherine Johnson" />
           })}
         />
         <Drawer.Screen
           name="Radia Perlman"
           component={RadiaPerlman}
           options={({ navigation }) => ({
-            header: () => <CustomHeader navigation={navigation} title="Radia Perlman" />
+            header: () => <CustomHeader style={styles.CustomHeader} navigation={navigation} title="Radia Perlman" />
           })}
         />
         <Drawer.Screen
