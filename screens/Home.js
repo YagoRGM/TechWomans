@@ -65,10 +65,11 @@ const styles = StyleSheet.create({
   },
   button: {
     padding: 15,
+    paddingHorizontal: 100,
     borderRadius: 20,
     backgroundColor: 'white',
-    width: '90%',
     alignItems: 'center',
+    marginTop: 15,
   },
   buttonText: {
     fontSize: 15,

@@ -35,6 +35,7 @@ const CustomHeader = ({ navigation, title }) => {
         color: 'white',
         fontWeight: 'bold',
         flex: 1,
+        textAlign: 'center',
       }}>
         {title}
       </Text>
@@ -87,21 +88,21 @@ export default function DrawerNavigator() {
           name="Margaret Hamilton"
           component={MargaretHamilton}
           options={({ navigation }) => ({
-            header: () => <CustomHeader style={styles.CustomHeader} navigation={navigation} title="Margaret Hamilton" />
+            header: () => <CustomHeader navigation={navigation} title="Margaret Hamilton" />
           })}
         />
         <Drawer.Screen
           name="Katherine Johnson"
           component={KatherineJohnson}
           options={({ navigation }) => ({
-            header: () => <CustomHeader style={styles.CustomHeader} navigation={navigation} title="Katherine Johnson" />
+            header: () => <CustomHeader navigation={navigation} title="Katherine Johnson" />
           })}
         />
         <Drawer.Screen
           name="Radia Perlman"
           component={RadiaPerlman}
           options={({ navigation }) => ({
-            header: () => <CustomHeader style={styles.CustomHeader} navigation={navigation} title="Radia Perlman" />
+            header: () => <CustomHeader navigation={navigation} title="Radia Perlman" />
           })}
         />
         <Drawer.Screen
